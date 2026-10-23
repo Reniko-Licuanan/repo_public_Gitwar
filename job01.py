@@ -1,0 +1,15 @@
+def draw_rectangle(width, height):
+
+    if width < 2 or height < 2:
+        print("La largeur et la hauteur doivent être d'au moins 2.")
+        return
+
+    for i in range(height):
+        if i == 0 or i == height - 1:
+
+            print('|' + '-' * (width - 2) + '|')
+        else:
+
+            print('|' + ' ' * (width - 2) + '|')
+
+draw_rectangle(10, 3)
